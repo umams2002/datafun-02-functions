@@ -2,7 +2,7 @@
 
 > Practice with built-in functions, creating functions, creating methods (functions in a class), and employing statistical functions
 
-## Prerequiste
+## Prerequisite
 
 1. Complete the steps at [datafun-01-getting-started](https://github.com/denisecase/datafun-01-getting-started).
 1. Get the authors code as described at [datafun-01-textbook](https://github.com/denisecase/datafun-01-textbook).
