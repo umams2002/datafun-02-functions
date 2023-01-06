@@ -24,9 +24,6 @@ Fork this repo into your GitHub account.
 
 Clone your new repo down to your machine.
 
-## Task 3 - Read/Run The Examples
+## Task 3 - Open the Project Locally
 
-Read and run each Python file in VS Code.
-
-Use the examples provided and your textbook to 
-understand a variety of functions. 
+Open the project in VS Code. 
