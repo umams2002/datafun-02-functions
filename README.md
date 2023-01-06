@@ -26,24 +26,7 @@ Clone your new repo down to your machine.
 
 ## Task 3 - Read/Run The Examples
 
-Read and run each Python file.
+Read and run each Python file in VS Code.
 
 Use the examples provided and your textbook to 
 understand a variety of functions. 
-
-## Task 4 - Complete the Custom Code
-
-Several files have been provided:
-
-- user_math.py
-- user_stats.py
-- useroop.py
-
-Use these to get started on your custom coding.
-
-## Task 5 - When complete, push to GitHub
-
-When you finish (or as you go), use VS Code to commit and sync 
-your changes. If you prefer, use Git Bash or Terminal to 
-git add, commit, and push. 
-
