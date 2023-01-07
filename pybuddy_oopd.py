@@ -15,7 +15,6 @@ from dataclasses import dataclass, field
 
 import datetime
 from enum import Enum
-import about
 
 
 class Species(Enum):
