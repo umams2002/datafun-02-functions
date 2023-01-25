@@ -5,7 +5,7 @@ It uses the simple doctest module to check the functions.
 
 In general, try to write functions that return a value (or values).
 
-If the fuction does something else (e.g. prints to the console),
+If the function does something else (e.g. prints to the console),
 it's called a 'side effect'.
 
 Writing functions is critical.
