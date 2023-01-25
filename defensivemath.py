@@ -39,7 +39,7 @@ def get_circle_area(radius):
     radius -- the radius of the circle
 
     This could fail - for example, what is the 
-    area of a circle qith a negative radius?
+    area of a circle with a negative radius?
     Or a circle with an infinite radius?
 
     """
