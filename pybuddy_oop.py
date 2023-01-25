@@ -23,7 +23,7 @@ Object-Oriented Programming in Python
 - Python allows you to create classes - or data classes
 - You don't have to organize your code this way
 - Implement classes where you'll instantiate one or more with 
-  specific data. Do want makes sense.
+  specific data. Do what makes sense.
 
 We'll use it here, because we want to instantiate 
 several PyBuddies, each with different attributes, 
