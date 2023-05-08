@@ -1,6 +1,5 @@
 """
-This file illlustrates some built-in functions,
-conditions, and branching.
+Purpose: illlustrate some built-in functions, conditions, and branching.
 
 Always start your file with a docstring.
 
@@ -9,7 +8,10 @@ The name of the module is the name of the file without the extension.
 
 """
 
-import webbrowser # add some fun
+import webbrowser
+
+from util_datafun_logger import setup_logger
+logger, logname = setup_logger(__file__)
 
 print("Hello!, We'll ask for three temperatures in Celcius.")
 print()
@@ -25,6 +27,10 @@ print()
 temp_1 = float(temp_string_1)
 temp_2 = float(temp_string_2)
 temp_3 = float(temp_string_3)
+
+logger.info(f"temp_1 = {temp_1}")
+logger.info(f"temp_2 = {temp_2}")
+logger.info(f"temp_3 = {temp_3}")
 
 # find the sum
 sum = temp_1 + temp_2 + temp_3
@@ -45,13 +51,12 @@ largest = max(temp_1, temp_2, temp_3)
 range = largest - smallest
 
 # print the results
-print(f"The sum is {sum}.")
-print(f"The average is {average}.")
-print(f"The product is {product}.")
-print(f"The smallest is {smallest}.")
-print(f"The largest is {largest}.")
-print(f"The range is {range}.")
-print()
+logger.info(f"The sum is {sum}.")
+logger.info(f"The average is {average}.")
+logger.info(f"The product is {product}.")
+logger.info(f"The smallest is {smallest}.")
+logger.info(f"The largest is {largest}.")
+logger.info(f"The range is {range}.")
 
 # conditions and branching
 
@@ -61,17 +66,23 @@ utterance3 = "It's above freezing at the Doggy Daycare!"
 temp_freezing = 0
 
 if temp_3 < temp_freezing:
-    print(utterance1)
+    logger.info(utterance1)
 elif temp_3 == temp_freezing:
-    print(utterance2)
+    logger.info(utterance2)
 else:
-    print(utterance3)
-print()
+    logger.info(utterance3)
+
 
 # ask more
 
-str_response = input("Do you want to learn more about puppies? (y/n) ")
+str_response = input("Do you want to learn more about pet statistics? (y/n) ")
 
 if str_response == "y":
     # import webbrowser at the top of the file
-    webbrowser.open("https://en.wikipedia.org/wiki/Puppy")
+    webbrowser.open("https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics")
+
+logger.info("Script complete. See log file for details.")
+
+# Read log file and print it to the terminal
+with open(logname, 'r') as file_wrapper:
+    print(file_wrapper.read())

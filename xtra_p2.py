@@ -1,94 +1,101 @@
 """
-Optional bonus. See course site for details.
+Purpose: 
 
+Practice writing functions using positional and keyword arguments.
+Practice logging functions using the util_datafun_logger module
+Log each time the function is called (along with its arguments)
+Log the result of each function just before you return the result
 
+ ----------------------------------------------------------
+ UNIT TESTS BELOW - SPECIFY CORRECT BEHAVIOR
+ ----------------------------------------------------------
 
->>> add_two(1,2)
+>>> sum_two(1,2)
 3
 
->>> add_two("hello"," world")
+>>> sum_two("hello"," world")
 'hello world'
 
->>> add_triangle_list( [3,4,5] )
-12
-
->>> add_any(1,1,1,1,1,1,1,1)
+>>> sum_rectangle_list( [1,1,3,3] )
 8
 
->>> add_any_with_keywords(a=1,b=2)
-3
+>>> transform_using_keyword_args_with_default_values()
+'bea'
 
->>> convert_ctof(0)
-32.0
+>>> transform_using_keyword_args_with_default_values(reverse=True)
+'aeb'
 
->>> convert_ctof(100)
-212.0
+>>> transform_using_keyword_args_with_default_values(input="hello", reverse=True)
+'leh'
+
+>>> sum_any_using_args(1,1,1,2)
+5
+
+>>> sum_any_with_keyword_arguments_kwargs(a=1,b=2,c=3)
+6
+
+@uses doctest - to verify our functions are correct
 """
 
 import doctest
 
-# define some existing functions
-def add_two(first, second):
-    """Return the sum of any two arguments."""
-    sum = first   # fix this line
-    return sum
+from util_datafun_logger import setup_logger
+logger, logname = setup_logger(__file__)
 
 
-def add_triangle_list(list_triangle):
-    """Return the sum of three numbers in a list."""
-    sum = 0
-    for value in list_triangle:
-        sum = sum + 0  # fix this line to add the value instead of 0
-    return sum
-
-
-def add_any(*args):
-    """Return the sum of numbers, using built-in *args."""
-    sum = 0
-    for x in args:
-        sum += 1  # fix this line to add x instead of 1
-    return sum
-
-
-def add_any_with_keywords(**kwargs):
-    """Return the sum of numbers, using built-in keyword args, **kwargs."""
-    sum = 0
-    for value in kwargs.values():  # use values() - name doesn't matter
-        sum += value  # Use the popular and concise version of sum = sum + x
-    return sum
-
-
-# TODO: implment a new function to convert celsius to fahrenheit
-# Use round as needed to make the test pass
-# The name of the function is provided in the docstring above
+# TODO: Add functions to get the unit tests to pass 
+# TODO: Log each time the function is called (along with its arguments)
+# TODO: Log the result of each function just before you return the result
 
 
 
 
 
 
+# TODO: Fix this function to get just the first 3 letters (possibly reversed)
+def transform_using_keyword_args_with_default_values(input="bearcat", reverse=False):
+    '''Return a string with just the first 3 letters of input string. 
+    If reverse is True, reverse the first 3 letters. 
+    If reverse is omitted or False, return the first 3 letters reversed. 
+    @kwargs:
+        input: a string, default "bearcat"
+        reverse: a boolean, default False'''
+    
+    s = f"CALLING transform_using_keyword_args_with_default_values(input={input}, reverse={reverse})"
+    logger.info(s)
 
+    result = input
+
+    logger.info(f"RETURNING {result}")
+    return result
 
 
 
 if __name__ == "__main__":
 
+    # -------------------------------------------------------------
+    # Call some functions and execute code!
+    # Nothing below here needs to change
+    # -------------------------------------------------------------
 
-    print("===========================================================")
-    print("Running doctest.testmod() function to unit test our code")
-    print("===========================================================")
-    print()
-    doctest.testmod()
-    print()
-    print("===========================================================")
-    print("If you don't see any results, all tests passed.")
-    print("===========================================================")
-    print("Run with the -v flag to show results regardless.")
-    print("Hit up arrow (to get last command) and add space -v")
-    print("===========================================================")
-    print()
-    print("Read error messages carefully.")
-    print("Errors tell which line number has the error")
-    print("and what the issue is. Scroll up in the terminal to see.")
-    print("Fix issues one at a time until you get the behavior")
-    print("Described in the docstring.")
+    transform_using_keyword_args_with_default_values()
+    transform_using_keyword_args_with_default_values(reverse=True)
+    transform_using_keyword_args_with_default_values(input="hello", reverse=True)
+
+    logger.info("===========================================================")
+    logger.info("Running doctest.testmod() function to unit test our code")
+    logger.info("===========================================================")
+
+    # Run doctest and log the results
+
+    doctest_result = doctest.testmod()
+    if doctest_result.failed == 0:
+        logger.info("All tests passed!")
+    else:
+        logger.error(f"{doctest_result.failed} tests failed!")
+
+    logger.info("Script complete. More info in the log file.")
+        
+    # Read log file and print it to the terminal
+    with open(logname, 'r') as file_wrapper:
+        print(file_wrapper.read())

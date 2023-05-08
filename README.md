@@ -5,16 +5,9 @@
 ## Prerequisite
 
 1. Complete the steps at [datafun-01-getting-started](https://github.com/denisecase/datafun-01-getting-started).
-1. Get the authors code as described at [datafun-01-textbook](https://github.com/denisecase/datafun-01-textbook).
+1. Get author examples as described at [datafun-01-textbook](https://github.com/denisecase/datafun-01-textbook).
 
 See those projects for additional help with tasks below. 
-
-## Goals
-
-1. Use built-in functions.
-1. Create and call custom functions.
-1. Create methods (functions in a class)
-1. Employ statistical functions
 
 ## Task 1 - Fork this Repo
 
