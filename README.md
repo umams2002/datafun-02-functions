@@ -13,10 +13,10 @@ See those projects for additional help with tasks below.
 
 Fork this repo into your GitHub account.
 
-## Task 2 - Clone Your Repo 
+## Task 2 - Clone Your Forked Repo 
 
-Clone your new repo down to your machine.
+Using VS Code or Git Bash, clone the forked repository to your local machine.
 
-## Task 3 - Open the Project Locally
+## Task 3 -  Open the Repo in VS Code
 
-Open the project in VS Code. 
+Ensure the cloned repository is opened in VS Code. If not, launch VS Code and open the project folder.
