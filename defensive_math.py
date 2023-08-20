@@ -7,7 +7,7 @@ Use try / except / finally whenever a valid function could cause an error
 e.g.,
 - a number is not valid such as a negative radius or age
 - a string is empty or missing
-- the requested resouce could not be found
+- the requested resource could not be found
 
 The math module includes:
 - pi
@@ -18,7 +18,7 @@ The math module includes:
 - comb(n,k) for combinations i.e.,
     number of ways to choose k items from n items
     w/out repetition and w/out order
-- perm(n,k) for permuations i.e.,
+- perm(n,k) for permutations i.e.,
     number of ways to choose k items from n items
     w/out repetition and With order
 
@@ -28,9 +28,8 @@ The math module includes:
 
 import math
 
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
-
 
 
 def get_circle_area_given_radius(radius):

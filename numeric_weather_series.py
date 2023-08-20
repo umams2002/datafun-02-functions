@@ -17,8 +17,8 @@ Weather adds:
 # From the name of the module (the file name without .py), import the class we want to inherit from
 from numeric_series import NumericSeries
 
-# From the util_datafun_logger module, import the setup_logger function
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
+logger, logname = setup_logger(__file__)
 
 
 class NumericWeatherSeries(NumericSeries):
@@ -70,9 +70,6 @@ if __name__ == "__main__":
     # If we're running this script (instead of using it in another class or script), 
     # Run some code to try our class
 
-    # First, setup logging
-    logger, logname = setup_logger(__file__)
-
     # Create an object by calling the constructor 
     # The constructor method is always the name of the class
     # pass in the information required by the __init__ method defined in the class
@@ -113,15 +110,6 @@ if __name__ == "__main__":
 
     object_list = [object1, object2, object3]
 
-    # Loop through our objects and get some statistics
-    # Rather than using a built-in function and passing in our data
-    # we call methods directly on our objects
-    # Why? It's just another way to organize and reuse code. 
-    # We encapusulate (wrap up) the attributes and associated methods into a resuable class. 
-    # Write the class once, and use it many times. 
-    # We'll see this a lot when we use dataframes to hold tables of data. 
-    # Many popular libraries provide reusuable classes. 
-    # It's a powerful way to organize code when dealing with many objects of the same type.
 
     for object in object_list:
         logger.info(object)
@@ -131,6 +119,3 @@ if __name__ == "__main__":
         logger.info(f"Median: {object.median()}")
         logger.info("------------------")
 
-    # Read log file and print it to the terminal
-    with open(logname, 'r') as file_wrapper:
-      print(file_wrapper.read())

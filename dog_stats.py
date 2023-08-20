@@ -1,5 +1,5 @@
 """
-Purpose: illlustrate some built-in functions, conditions, and branching.
+Purpose: illustrate some built-in functions, conditions, and branching.
 
 Always start your file with a docstring.
 
@@ -10,7 +10,7 @@ The name of the module is the name of the file without the extension.
 
 import webbrowser
 
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
 
 print("Hello!, We'll ask for three temperatures in Celcius.")
@@ -83,6 +83,3 @@ if str_response == "y":
 
 logger.info("Script complete. See log file for details.")
 
-# Read log file and print it to the terminal
-with open(logname, 'r') as file_wrapper:
-    print(file_wrapper.read())

@@ -16,7 +16,7 @@ In general, try to write functions that return a value (or values).
 If the function does something else (e.g. prints to the console),
 it's called a 'side effect'.
 
-Being able to write good, simple, straightforward resuable functions is a very valuable skill.
+Being able to write good, simple, straightforward reusable functions is a very valuable skill.
 
 With Python we can define 'unit tests' right here in the docstring.
  - Show what SHOULD happen (will test this with doctest)
@@ -56,9 +56,8 @@ With Python we can define 'unit tests' right here in the docstring.
 
 import doctest
 
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
-
 
 
 def add_two(first, second):
@@ -155,6 +154,3 @@ if __name__ == "__main__":
 
     logger.info("Script complete. More info in the log file.")
         
-    # Read log file and print it to the terminal
-    with open(logname, 'r') as file_wrapper:
-        print(file_wrapper.read())

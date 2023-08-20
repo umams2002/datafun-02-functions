@@ -9,7 +9,8 @@ For example, see numeric_weather_series.py for a child class that adds a locatio
 
 '''
 
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
+logger, logname = setup_logger(__file__)
 
 class NumericSeries:
     """
@@ -43,10 +44,10 @@ class NumericSeries:
 
     # define methods that can be used on the object
     # method is a special word for "function in an object"
-    # In Python, the first arugment of a method is always self - the object itself
+    # In Python, the first argument of a method is always self - the object itself
     def count(self):
         """ 
-        Get the count of elments in the data list.
+        Get the count of elements in the data list.
 
         @return: the count of elements
         """
@@ -119,10 +120,6 @@ if __name__ == "__main__":
     # If we're running this script (instead of using it in another class or script), 
     # Run some code to try our class
 
-    # First, setup logging
-
-    logger, logname = setup_logger(__file__)
-
     # Create an object by calling the constructor 
     # The constructor method is always the name of the class
     # pass in the information required by the __init__ method defined in the class
@@ -165,10 +162,10 @@ if __name__ == "__main__":
     # Rather than using a built-in function and passing in our data
     # we call methods directly on our objects
     # Why? It's just another way to organize and reuse code. 
-    # We encapusulate (wrap up) the attributes and associated methods into a resuable class. 
+    # We encapsulate (wrap up) the attributes and associated methods into a reusable class. 
     # Write the class once, and use it many times. 
-    # We'll see this a lot when we use dataframes to hold tables of data. 
-    # Many popular libraries provide reusuable classes. 
+    # We'll see this a lot when we use DataFrames to hold tables of data. 
+    # Many popular libraries provide reusable classes. 
     # It's a powerful way to organize code when dealing with many objects of the same type.
 
     for object in object_list:
@@ -179,6 +176,3 @@ if __name__ == "__main__":
         logger.info(f"Median: {object.median()}")
         logger.info("------------------")
 
-    # Read log file and print it to the terminal
-    with open(logname, 'r') as file_wrapper:
-      print(file_wrapper.read())

@@ -39,15 +39,12 @@ Log the result of each function just before you return the result
 
 import doctest
 
-from util_datafun_logger import setup_logger
+from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
-
 
 # TODO: Add functions to get the unit tests to pass 
 # TODO: Log each time the function is called (along with its arguments)
 # TODO: Log the result of each function just before you return the result
-
-
 
 
 
@@ -96,6 +93,3 @@ if __name__ == "__main__":
 
     logger.info("Script complete. More info in the log file.")
         
-    # Read log file and print it to the terminal
-    with open(logname, 'r') as file_wrapper:
-        print(file_wrapper.read())
