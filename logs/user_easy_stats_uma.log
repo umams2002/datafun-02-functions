@@ -1,0 +1,22 @@
+2023-09-02 18:28:34,063.user_easy_stats_uma.INFO ==================================================
+2023-09-02 18:28:34,063.user_easy_stats_uma.INFO Today is 2023-09-02 at 06:28 PM
+2023-09-02 18:28:34,317.user_easy_stats_uma.INFO Running on: nt Windows 10
+2023-09-02 18:28:34,317.user_easy_stats_uma.INFO Python version:  3.11.5
+2023-09-02 18:28:34,317.user_easy_stats_uma.INFO Python path: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0
+2023-09-02 18:28:34,326.user_easy_stats_uma.INFO Working dir: C:\Users\A2645055\OneDrive - H&R BLOCK LTD\Uma\College\DataFundamental\datafun-02-functions
+2023-09-02 18:28:34,326.user_easy_stats_uma.INFO ==================================================
+2023-09-02 18:28:34,358.user_easy_stats_uma.INFO uni_data = [261.96, 731.94, 14.62, 957.5775, 22.368, 48.86, 7.28, 907.152, 18.504, 114.9, 1706.184, 911.424, 15.552, 407.976, 68.81, 2.544, 665.88, 55.5, 8.56, 213.48, 22.72, 19.46, 60.34, 71.372, 1044.63, 11.648, 90.57, 3083.43, 9.618, 124.2, 3.264, 86.304, 6.858, 15.76, 29.472, 1097.544, 190.92, 113.328, 532.3992, 212.058, 371.168, 147.168, 77.88]
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO mean   = 338.68
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO median = 86.30
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO mode   = 261.96
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO var    = 338636.0
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO stdev  = 581.92
+2023-09-02 18:28:34,366.user_easy_stats_uma.INFO lowest = 2.54
+2023-09-02 18:28:34,374.user_easy_stats_uma.INFO highest= 3083.43
+2023-09-02 18:28:34,374.user_easy_stats_uma.WARNING Correlation requires Python version 3.10 or greater.
+2023-09-02 18:28:34,374.user_easy_stats_uma.WARNING Your version is 3.11
+2023-09-02 18:28:34,374.user_easy_stats_uma.INFO Here's some time series data:
+2023-09-02 18:28:34,374.user_easy_stats_uma.INFO xSales:[261.96, 731.94, 14.62, 957.5775, 22.368, 48.86, 7.28, 907.152, 18.504, 114.9, 1706.184, 911.424, 15.552, 407.976, 68.81, 2.544, 665.88, 55.5, 8.56, 213.48, 22.72, 19.46, 60.34, 71.372, 1044.63, 11.648, 90.57, 3083.43, 9.618, 124.2, 3.264, 86.304, 6.858, 15.76, 29.472, 1097.544, 190.92, 113.328, 532.3992, 212.058, 371.168, 147.168, 77.88]
+2023-09-02 18:28:34,374.user_easy_stats_uma.INFO yQuantity:[2, 3, 2, 5, 2, 7, 4, 6, 3, 5, 9, 4, 3, 3, 5, 3, 6, 2, 2, 3, 4, 7, 7, 2, 3, 2, 3, 7, 2, 3, 2, 6, 6, 2, 3, 7, 5, 9, 3, 3, 4, 4, 2]
+2023-09-02 18:28:34,382.user_easy_stats_uma.INFO correlation between xSales and xSales = 1.00
+2023-09-02 18:28:34,382.user_easy_stats_uma.INFO correlation between xSales and yQuantity = 0.43
