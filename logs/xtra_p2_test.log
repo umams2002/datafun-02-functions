@@ -1,0 +1,12 @@
+2023-09-02 19:29:48,508.xtra_p2_test.INFO ==================================================
+2023-09-02 19:29:48,508.xtra_p2_test.INFO Today is 2023-09-02 at 07:29 PM
+2023-09-02 19:29:48,607.xtra_p2_test.INFO Running on: nt Windows 10
+2023-09-02 19:29:48,607.xtra_p2_test.INFO Python version:  3.11.5
+2023-09-02 19:29:48,608.xtra_p2_test.INFO Python path: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0
+2023-09-02 19:29:48,608.xtra_p2_test.INFO Working dir: C:\Users\A2645055\OneDrive - H&R BLOCK LTD\Uma\College\DataFundamental\datafun-02-functions
+2023-09-02 19:29:48,608.xtra_p2_test.INFO ==================================================
+2023-09-02 19:29:48,608.xtra_p2_test.INFO ===========================================================
+2023-09-02 19:29:48,609.xtra_p2_test.INFO Running doctest.testmod() function to unit test our code
+2023-09-02 19:29:48,609.xtra_p2_test.INFO ===========================================================
+2023-09-02 19:29:48,612.xtra_p2_test.INFO All tests passed!
+2023-09-02 19:29:48,612.xtra_p2_test.INFO Script complete. More info in the log file.

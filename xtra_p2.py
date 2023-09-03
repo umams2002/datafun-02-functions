@@ -42,6 +42,7 @@ import doctest
 from util_logger import setup_logger
 logger, logname = setup_logger(__file__)
 
+
 # TODO: Add functions to get the unit tests to pass 
 # TODO: Log each time the function is called (along with its arguments)
 # TODO: Log the result of each function just before you return the result
@@ -58,6 +59,10 @@ def transform_using_keyword_args_with_default_values(input="bearcat", reverse=Fa
         input: a string, default "bearcat"
         reverse: a boolean, default False'''
     
+    result = input[:3]
+    
+    if reverse:
+        result = result[::-1]
     s = f"CALLING transform_using_keyword_args_with_default_values(input={input}, reverse={reverse})"
     logger.info(s)
 
@@ -65,6 +70,9 @@ def transform_using_keyword_args_with_default_values(input="bearcat", reverse=Fa
 
     logger.info(f"RETURNING {result}")
     return result
+    
+    
+    
 
 
 
@@ -78,7 +86,7 @@ if __name__ == "__main__":
     transform_using_keyword_args_with_default_values()
     transform_using_keyword_args_with_default_values(reverse=True)
     transform_using_keyword_args_with_default_values(input="hello", reverse=True)
-
+    
     logger.info("===========================================================")
     logger.info("Running doctest.testmod() function to unit test our code")
     logger.info("===========================================================")
